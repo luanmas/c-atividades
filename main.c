@@ -1,6 +1,26 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <stdio.h>
 #include <math.h>
+
+void questao02() {
+    int num = 0;
+
+    printf("Enter a number here : ");
+    scanf("%d" , &num);
+
+    printf("Hex : %x\n" , num);
+    printf("Oct : %o" , num);
+}
+
+void questao03() {
+    float num = 0.0;
+
+    printf("Enter a number with two and more decimal case : ");
+    scanf("%f" , &num);
+
+    printf("%.1f" , num);
+}
 
 void questao04() {
     int valorReal = 0;
@@ -354,11 +374,9 @@ int questao23() {
     int num = 0;
 
     printf("Enter a three-digit number : ");
-    scanf("%d" , &num); // 321
-    // 321 / 100 = 3
-    // 321 % 10 = 1
-    // 321 % 100 = 21 / 10 = 2
-    printf("%d%d%d\n" , num % 10 , (num % 100) / 10 , num / 100); // 123
+    scanf("%d" , &num);
+
+    printf("%d%d%d\n" , num % 10 , (num % 100) / 10 , num / 100);
 }
 
 int questao25() {
@@ -376,7 +394,48 @@ int questao25() {
     printf("seconds : %d" , seconds);
 }
 
+int questao26() {
+    float x1 , x2 , y1 , y2 , d = 0.0;
+
+    printf("Enter a coordinated x1 :");
+    scanf("%f" , &x1);
+
+    printf("Enter a coordinated x2 :");
+    scanf("%f" , &x2);
+
+    printf("Enter a coordinated y1 :");
+    scanf("%f" , &y1);
+
+    printf("Enter a coordinated y2 :");
+    scanf("%f" , &y2);
+
+    d = sqrt(pow(x2 - x1 , 2) + pow(y2 - y1 , 2));
+
+    printf("Distance : %.2f" , d);
+}
+
+int questao27() {
+    float num1 , num2 , num3 , arithmeticAverage , geometricAverage = 0.0;
+
+    printf("Enter a first number : ");
+    scanf("%f" , &num1);
+
+    printf("Enter a second number : ");
+    scanf("%f" , &num2);
+
+    printf("Enter a third number : ");
+    scanf("%f" , &num3);
+
+    arithmeticAverage = (num1 + num2 + num3) / 3;
+    geometricAverage = cbrt(num1 * num2 * num3);
+
+    printf("Arithmetic Average : %.2f\n" , arithmeticAverage);
+    printf("Geometric Average : %.2f" , geometricAverage);
+}
+
 int main(){
+    // questao02();
+    // questao03();
     // questao04();
     // questao05();
     // questao07();
@@ -393,6 +452,8 @@ int main(){
     // questao19();
     // questao20();
     // questao21();
-    questao22();
+    // questao22();
     // questao25();
+    // questao26();
+    // questao27();
 }
