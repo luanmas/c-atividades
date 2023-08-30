@@ -42,35 +42,35 @@ void questao05() {
     printf("Final bill : %.2f $" , restarautBill * 1.10);
 }
 
-// int questao06() {
-//     char sex = "m";
-//     double height = 0.00;
+int questao06() {
+    char sex = "";
+    double height = 0.00;
     
-//     printf("Man types m\n");
-//     printf("Woman types w\n");
-//     printf("Type here : ");
-//     scanf("%c" , sex);
+    printf("Man types m\n");
+    printf("Woman types w\n");
+    printf("Type here : ");
+    scanf("%c" , sex);
 
-//     printf("Your height : ");
-//     scanf('%f' , &height);
+    printf("Your height : ");
+    scanf('%f' , &height);
 
-//     switch (sex) {
-//         case 'm' :
-//         printf("Your idea weight is %f" ,  72.7 * height -  58);
-//         break;
+    switch (sex) {
+        case 'm' :
+        printf("Your idea weight is %f" ,  72.7 * height -  58);
+        break;
 
-//         case 'w' :
-//         printf("Your idea weight is %f" ,  62.1 * height -  44.7);
-//         break;
+        case 'w' :
+        printf("Your idea weight is %f" ,  62.1 * height -  44.7);
+        break;
 
-//         default :
-//         printf("Escolha inválida");
-//         return 0;
-//     }
+        default :
+        printf("Escolha inválida");
+        return 0;
+    }
 
-// }
+}
 
-int questao07() {
+void questao07() {
     int min , hours , seconds , totalSeconds = 0;
 
     printf("Types hours : ");
@@ -87,7 +87,7 @@ int questao07() {
     printf("Total seconds : %d" , totalSeconds);
 }
 
-int questao08() {
+void questao08() {
     int num = 0;
 
     printf("type a number here : ");
@@ -96,7 +96,7 @@ int questao08() {
     printf("Squared number : %d" , num * num);
 }
 
-int questao09() {
+void questao09() {
     int num , prev , next = 0;
 
     printf("types a number here : ");
@@ -109,7 +109,7 @@ int questao09() {
     printf("number prev : %d" , prev);
 }
 
-int questao10 () {
+void questao10 () {
     float lenght, widht, height, totalVolume = 0;
 
     printf("types lenght here : ");
@@ -379,6 +379,20 @@ int questao23() {
     printf("%d%d%d\n" , num % 10 , (num % 100) / 10 , num / 100);
 }
 
+int questao24() {
+    int x , n , res = 0;
+
+    printf("Enter a value x : ");
+    scanf("%d", &x);
+
+    printf("Enter a value n : ");
+    scanf("%d" , &n);
+
+    res = x << n;
+
+    printf("Result : %d" , res);
+}
+
 int questao25() {
     int seconds , hours , minutes = 0;
 
@@ -453,7 +467,11 @@ int main(){
     // questao20();
     // questao21();
     // questao22();
+    // questao23();
+    // questao24();
     // questao25();
     // questao26();
     // questao27();
 }
+
+// q 24 , 23 , 12 , 6
