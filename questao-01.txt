@@ -1,0 +1,27 @@
+- Primeira situação:
+
+Dada a expressão: x + 7
+
+Nesta situação, você pode começar com qualquer valor para x, somar 7 e obter o resultado.
+
+- Segunda situação:
+
+Dada a expressão: (2 % 2) + (2 * 2) + (-2 / 2) + (1 + -1)
+
+    O resto de 2 dividido por 2 é 0.
+    Multiplicar 2 por 2 resulta em 4.
+    Dividir -2 por 2 resulta em -1.
+    Somar 1 e -1 resulta em 0.
+
+    A expressão se torna: 0 + 4 - 1 + 0, o que é igual a 3.
+
+- Terceira situação:
+
+Dada a expressão: ((3 / 3) * 9 + 3) * (9 * 3)
+
+    Dividir 3 por 3 resulta em 1.
+    Multiplicar 1 por 9 resulta em 9.
+    Somar 9 e 3 resulta em 12.
+    Multiplicar 9 por 3 resulta em 27.
+
+    A expressão final se torna: 12 * 27, que é igual a 324.
